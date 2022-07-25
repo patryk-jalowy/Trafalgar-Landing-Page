@@ -31,7 +31,6 @@ class Navbar extends HTMLElement {
       active: this.getAttribute('active'),
       // breakpoint: this.getAttribute('breakpoint')
     }
- 
     // const btn = new NavbarBtn(props.breakpoint)
     // this.shadowRoot.querySelector('header div').append(btn)
 

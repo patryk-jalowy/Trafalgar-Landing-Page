@@ -10,23 +10,22 @@ header {
     width: fit-content;
   }
   header nav {
-    background-color: var(--navbar-menu-color);
+    background-color: var(--navbar-bg-color);
     display: flex;
-    padding: 3.5rem 11.9375rem;
+    padding: var(--spacer-navbar-y) var(--spacer-navbar-x);
     justify-content: space-between;
     width: 100%;
   }
   ::slotted(a) {
-    font-size: 1.125rem ;
+    font-size: var(--font-size-normal);
     display: flex;
     color: var(--navbar-link-color);
-    padding: 1rem 1.25rem ;
+    padding: var(--slot-spacer-y) var(--slot-spacer-x) ;
     text-decoration: none;
     min-width: fit-content;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   ::slotted(a:hover) {
-    color: var(--navbar-link-hover-color);
+    color: var(--navbar-link-active-color);
   }
   ::slotted(.nav-link--active) {
     color: var(--navbar-link-active-color);
