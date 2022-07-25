@@ -31,15 +31,15 @@ class Navbar extends HTMLElement {
       active: this.getAttribute('active'),
       // breakpoint: this.getAttribute('breakpoint')
     }
-
+ 
     // const btn = new NavbarBtn(props.breakpoint)
     // this.shadowRoot.querySelector('header div').append(btn)
 
     const data = {
       header: this.shadowRoot.querySelector('header'),
       // button: this.shadowRoot.querySelector('header navbar-btn'),
-      // nav: this.shadowRoot.querySelector('header nav'),
-      links: this.shadowRoot.querySelectorAll('navigation-bar a'),
+      nav: this.shadowRoot.querySelector('header nav'),
+      links: this.shadowRoot.querySelectorAll('a'),
     }
 
     // const dist = data.nav.offsetHeight - 48
@@ -49,7 +49,7 @@ class Navbar extends HTMLElement {
     // this.createStyle(data.header.offsetHeight)
     // this.breakpointStyles(props.breakpoint, props.position)
 
-    // this.setActiveLink(data.links, props.active)
+    this.setActiveLink(data.links, props.active)
 
     // data.button.addEventListener('click', () => {
     //   data.nav.classList.toggle('show')
