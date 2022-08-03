@@ -1,12 +1,19 @@
-html {
-    width: 100%;
-    height: 100%;
+:root {
+  --navbar-bg-color: #ffffff;
+  --navbar-link-color: rgba(51, 51, 51, 0.7);
+  --navbar-link-hover-color: #333333;
+  --navbar-link-active-color: #333333;
+  --spacer-smaller: 0.5rem;
+  --spacer-small: 0.75rem;
+  --spacer-default: 1rem;
+  --spacer-big: 1.25rem;
+  --spacer-bigger: 1.5rem
+  --font-size-normal: 1.125rem;
+  --font-weight-bold: 700;
 }
 
-body{
-    font-family: 'Mulish', sans-serif;
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: var(--navbar-bg-color);
 }
-.logo{
-    font-weight: 600;
-    font-size: 1.625rem;
-}
+/*# sourceMappingURL=styles.css.map */

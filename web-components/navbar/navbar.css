@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header div {
+    align-items: center;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    width: fit-content;
+  }
+  header nav {
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    padding: var(--spacer-navbar);
+    justify-content: space-between;
+    width: 100%;
+  }
+  ::slotted(a) {
+    font-size: var(--font-size-normal);
+    display: flex;
+    color: var(--navbar-link-color);
+    padding: var(--spacer-default);
+    text-decoration: none;
+    min-width: fit-content;
+  }
+  ::slotted(a:hover) {
+    color: var(--navbar-link-active-color);
+  }
+  ::slotted(.nav-link--active) {
+    color: var(--navbar-link-active-color);
+    font-weight: var(--font-weight-bold);
+  }
