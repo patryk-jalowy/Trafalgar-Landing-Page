@@ -26,28 +26,14 @@ class Navbar extends HTMLElement {
   }
 
   connectedCallback() {
-
-    const props = {
-      active: this.getAttribute('active'),
-    }
     
     const data = {
       header: this.shadowRoot.querySelector('header'),
       nav: this.shadowRoot.querySelector('header nav'),
-      links: this.shadowRoot.querySelectorAll('a'),
     }
 
-    this.setActiveLink(data.links, props.active)
-
   }
 
-  setActiveLink (elements, attr) {
-    elements.forEach((link) => {
-      if (link.innerHTML.toLowerCase() === attr.toLowerCase()) {
-          link.classList.add('nav-link--active')
-      }
-    })
-  }
 }
 
 window.customElements.define('navigation-bar', Navbar)
