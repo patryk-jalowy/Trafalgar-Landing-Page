@@ -1,5 +1,4 @@
 
-
 const template = document.createElement('template');
 
 template.innerHTML = `
@@ -7,13 +6,12 @@ template.innerHTML = `
  @import "web-components/section/section.css";
 </style>
 <div>
-<div class="container w-100">
   <div class="row">
   <img src="/assets/img/dots.svg" ></img>
-    <div class="col-6">
+    <div class="column">
     <slot></slot>
     </div>
-    <div class="col-6">
+    <div class="column">
     <slot></slot>
     </div>
   </div>
