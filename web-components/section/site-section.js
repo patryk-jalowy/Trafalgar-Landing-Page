@@ -1,33 +1,33 @@
-
 const template = document.createElement('template');
 
 template.innerHTML = `
 <style>
  @import "web-components/section/site-section.css";
 </style>
-<div>
+
+<div class="section-container">
   <div class="row">
-  <img src="/assets/img/dots.svg" ></img>
+    <img class="dots-img" src="/assets/img/dots.svg">
+    
     <div class="col-6">
-    <slot></slot>
+        <slot name="slot-one"></slot>
     </div>
     <div class="col-6">
-    <slot></slot>
+        <slot name="slot-two"></slot>
     </div>
   </div>
-  </div>
+</div>
 `
-class Section extends HTMLElement {
+
+class SiteSection extends HTMLElement {
 
     constructor() {
-      super();
-      this.attachShadow({ mode: 'open' });
-      this.shadowRoot.appendChild(template.content.cloneNode(true));
+        super();
+        this.attachShadow({mode: 'open'});
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
 
-    connectedCallback() {
-        console.log('Component initiated!');
-    }
-
+    connectedCallback() {}
 }
-    window.customElements.define('site-section', Section);
+
+window.customElements.define('site-section', SiteSection);
