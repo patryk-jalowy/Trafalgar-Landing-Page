@@ -1,0 +1,14 @@
+
+  .row {
+    display: flex;
+  }
+  
+  .col-6 {
+    flex: 50%;
+    padding: var(--spacer-small);
+    height: 400px; 
+  }
+
+  img {
+    position: absolute;
+  }

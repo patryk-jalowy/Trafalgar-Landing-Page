@@ -1,13 +1,11 @@
 
-
 const template = document.createElement('template');
 
 template.innerHTML = `
 <style>
- @import "web-components/section/section.css";
+ @import "web-components/section/site-section.css";
 </style>
 <div>
-<div class="container w-100">
   <div class="row">
   <img src="/assets/img/dots.svg" ></img>
     <div class="col-6">
