@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/pogoskate/Trafalgar-Landing-Page#readme",
   "dependencies": {
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.1"
   }
 }

@@ -2,24 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles/styles.css">
-  <title>Trafalgar Landing Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Trafalgar Landing Page</title>
 </head>
 <body>
-<navigation-bar activeTab="home">
-  <a class="brand" slot="brand" href="">
-    <img src="assets/img/logo.svg" alt="Home">
-  </a>
-  <a href="">Home</a>
-  <a href="">Find a doctor</a>
-  <a href="">Apps</a>
-  <a href="">Testimonials</a>
-  <a href="">About Us</a>
-</navigation-bar>
-<script src="/web-components/navbar/navbar.js"></script>
+    <navigation-bar activeTab="home">
+        <a class="brand" slot="brand" href="">
+            <img src="assets/img/logo.svg" alt="Home">
+        </a>
+        <a href="">Home</a>
+        <a href="">Find a doctor</a>
+        <a href="">Apps</a>
+        <a href="">Testimonials</a>
+        <a href="">About Us</a>
+    </navigation-bar>
+
+    <site-section>
+
+        <p slot="slot-one">TEST 1</p>
+
+        <p slot="slot-two">TEST 2</p>
+
+    </site-section>
+
+    <script src="/web-components/section/site-section.js"></script>
+    <script src="/web-components/navbar/navbar.js"></script>
 </body>
 </html>

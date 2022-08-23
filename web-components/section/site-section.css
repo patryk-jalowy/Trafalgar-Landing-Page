@@ -1,0 +1,18 @@
+
+.section-container {
+    height: 65vh;
+    padding: var(--spacer-biggest) 0;
+}
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    flex: 50%;
+    padding: var(--spacer-small);
+}
+
+img.dots-img {
+    position: absolute;
+}

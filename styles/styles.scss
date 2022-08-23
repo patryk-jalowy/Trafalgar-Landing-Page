@@ -7,7 +7,8 @@
   --spacer-small: 0.75rem;
   --spacer-default: 1rem;
   --spacer-big: 1.25rem;
-  --spacer-bigger: 1.5rem
+  --spacer-bigger: 1.5rem;
+  --spacer-biggest: 2.5rem;
   --font-size-normal: 1.125rem;
   --font-weight-bold: 700;
 }
@@ -16,4 +17,18 @@ body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
 }
+
+
+.button {
+
+
+  &.primary {
+
+  }
+
+  &.secondary {
+
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
