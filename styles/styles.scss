@@ -3,6 +3,7 @@
   --navbar-link-color: rgba(51, 51, 51, 0.7);
   --navbar-link-hover-color: #333333;
   --navbar-link-active-color: #333333;
+  --main-blue-color: rgb(54, 120, 244);
   --spacer-smaller: 0.5rem;
   --spacer-small: 0.75rem;
   --spacer-default: 1rem;
@@ -17,43 +18,47 @@
 body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
+  margin: var(--spacer-big);
 }
 
 .img-content{
   text-align: center;
 }
 
-.text-content{
-  text-align: center;
-}
-
 .img-content img {
-  width: 70%;
+  max-width: 90%;
 }
 
 .text-content {
   display: flex;
-  width: 50%;
+  width: 47%;
   flex-direction: column;
-  position: relative;
-  left: 30%;
   text-align: left;
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-70%)
 }
 
 .button {
 
-  &.primary {
-  width: fit-content;
-  background-color: rgb(54, 120, 244);
-  padding: var(--spacer-small);
-  color: white;
   border-radius: var(--spacer-biggest);
   font-weight: var(--font-weight-thicker);
+  width: fit-content;
   margin: var(--spacer-big) 0;
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacer-small) var(--spacer-biggest);
+
+  &.primary {
+  
+  background-color: var(--main-blue-color);
+  color: var(--navbar-bg-color);
+  
   }
 
   &.secondary {
-
+    background-color: var(--navbar-bg-color);
+    color: var(--main-blue-color);
+    border: solid 1px var(--main-blue-color);
   }
 }
 

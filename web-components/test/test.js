@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement('template')
 
 template.innerHTML = `
 <style>
@@ -9,30 +9,27 @@ template.innerHTML = `
     <h3>This is a test web component</h3>
     <p>We will be using this a lot</p>
     <button id="click-me-button">Click Me</button>
-</div>`;
+</div>`
 
 class TestComponent extends HTMLElement {
+  constructor () {
+    super()
+    this.attachShadow({ mode: 'open' })
+    this.shadowRoot.appendChild(template.content.cloneNode(true))
 
-    constructor() {
-        super();
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
+    const button = this.shadowRoot.getElementById('click-me-button')
 
-        const button = this.shadowRoot.getElementById('click-me-button');
+    button.addEventListener('click', () => {
+      alert('Button has been clicked!')
+    })
+  }
 
-        button.addEventListener('click', () => {
-            alert('Button has been clicked!')
-        });
-    }
+  connectedCallback () {
+    console.log('Component initiated!')
+  }
 
-    connectedCallback() {
-        console.log('Component initiated!');
-    }
-
-    render() {
-    }
-
-
+  render () {
+  }
 }
 
-window.customElements.define('app-test', TestComponent);
+window.customElements.define('app-test', TestComponent)
