@@ -10,6 +10,7 @@
   --spacer-bigger: 1.5rem;
   --spacer-biggest: 2.5rem;
   --font-size-normal: 1.125rem;
+  --font-weight-thicker: 500;
   --font-weight-bold: 700;
 }
 
@@ -18,12 +19,37 @@ body {
   background-color: var(--navbar-bg-color);
 }
 
+.img-content{
+  text-align: center;
+}
+
+.text-content{
+  text-align: center;
+}
+
+.img-content img {
+  width: 70%;
+}
+
+.text-content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  position: relative;
+  left: 30%;
+  text-align: left;
+}
 
 .button {
 
-
   &.primary {
-
+  width: fit-content;
+  background-color: rgb(54, 120, 244);
+  padding: var(--spacer-small);
+  color: white;
+  border-radius: var(--spacer-biggest);
+  font-weight: var(--font-weight-thicker);
+  margin: var(--spacer-big) 0;
   }
 
   &.secondary {
