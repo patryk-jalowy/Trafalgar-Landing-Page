@@ -3,6 +3,7 @@
   --navbar-link-color: rgba(51, 51, 51, 0.7);
   --navbar-link-hover-color: #333333;
   --navbar-link-active-color: #333333;
+  --paragraph-collor: #5f5e5e;
   --main-blue-color: rgb(54, 120, 244);
   --spacer-smaller: 0.5rem;
   --spacer-small: 0.75rem;
@@ -38,7 +39,10 @@ body {
   top: 50%; left: 50%;
   transform: translate(-50%,-70%)
 }
-
+.text-content p {
+  line-height: var(--spacer-bigger);
+  color: var(--paragraph-collor);
+}
 .button {
 
   border-radius: var(--spacer-biggest);
