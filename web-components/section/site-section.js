@@ -1,4 +1,4 @@
-const template = document.createElement('template');
+const template = document.createElement('template')
 
 template.innerHTML = `
 <style>
@@ -8,7 +8,6 @@ template.innerHTML = `
 <div class="section-container">
   <div class="row">
     <img class="dots-img" src="/assets/img/dots.svg">
-    
     <div class="col-6">
         <slot name="slot-one"></slot>
     </div>
@@ -20,14 +19,13 @@ template.innerHTML = `
 `
 
 class SiteSection extends HTMLElement {
+  constructor () {
+    super()
+    this.attachShadow({ mode: 'open' })
+    this.shadowRoot.appendChild(template.content.cloneNode(true))
+  }
 
-    constructor() {
-        super();
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-    }
-
-    connectedCallback() {}
+  connectedCallback () {}
 }
 
-window.customElements.define('site-section', SiteSection);
+window.customElements.define('site-section', SiteSection)
