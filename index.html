@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Trafalgar Landing Page</title>
 </head>
+
 <body>
     <navigation-bar activeTab="home">
         <a class="brand" slot="brand" href="">
@@ -22,14 +23,31 @@
     </navigation-bar>
 
     <site-section>
+        <div class="text-content" slot="slot-one">
+            <h1>Virtual healthcare for you</h1>
+            <p>Trafalgar provides progressive and afordable healthcare, accesiible on mobile and online for everyone</p>
+            <button class="button primary">Consult today</button>
+        </div>
+        <div class="img-content" slot="slot-two">
+            <img src="/assets/img/trafalgar-header illustration 1.svg" alt="">
+        </div>
+    </site-section>
 
-        <p slot="slot-one">TEST 1</p>
-
-        <p slot="slot-two">TEST 2</p>
-
+    <site-section>
+        <div class="img-content" slot="slot-one">
+            <img src="/assets/img/trafalgar-illustration sec02 .svg" alt="">
+        </div>
+        <div class="text-content" slot="slot-two">
+            <h1>Leading helathcare provider</h1>
+            <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
+                To us, it’s not just work. We take pride
+                in the solutions we deliver</p>
+            <button class="button secondary">Download</button>
+        </div>
     </site-section>
 
     <script src="/web-components/section/site-section.js"></script>
     <script src="/web-components/navbar/navbar.js"></script>
 </body>
+
 </html>
