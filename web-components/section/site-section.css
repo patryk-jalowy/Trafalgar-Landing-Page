@@ -2,6 +2,7 @@
 .section-container {
     height: 65vh;
     padding: var(--spacer-biggest) 0;
+    margin: var(--spacer-biggest) 0;
 }
 
 .row {
@@ -10,7 +11,8 @@
 
 .col-6 {
     flex: 50%;
-    padding: var(--spacer-small);
+    padding: var(--spacer-biggest) 0;
+    justify-content: center;
 }
 
 img.dots-img {
