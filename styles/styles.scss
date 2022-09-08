@@ -4,7 +4,7 @@
   --navbar-link-hover-color: #333333;
   --navbar-link-active-color: #333333;
   --text-color-primary: #5f5e5e;
-  --main-blue-color: rgb(54, 120, 244);
+  --primary-color: rgb(54, 120, 244);
   --spacer-smaller: 0.5rem;
   --spacer-small: 0.75rem;
   --spacer-default: 1rem;
@@ -56,15 +56,15 @@ body {
 
   &.primary {
     border: none;
-    background-color: var(--main-blue-color);
+    background-color: var(--primary-color);
     color: var(--navbar-bg-color);
 
   }
 
   &.secondary {
     background-color: var(--navbar-bg-color);
-    color: var(--main-blue-color);
-    border: solid 1px var(--main-blue-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
   }
 }
 
