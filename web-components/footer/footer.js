@@ -1,6 +1,6 @@
-const template = document.createElement('template')
+const foot = document.createElement('template')
 
-template.innerHTML = `
+foot.innerHTML = `
 <style>
 @import "/web-components/footer/footer.css"/;
 
@@ -35,7 +35,7 @@ class Footer extends HTMLElement {
   constructor () {
     super()
     this.attachShadow({ mode: 'open' })
-    this.shadowRoot.appendChild(template.content.cloneNode(true))
+    this.shadowRoot.appendChild(foot.content.cloneNode(true))
   }
 
   connectedCallback () {}
