@@ -1,4 +1,25 @@
 .footer-container{
-    height: 20vh;
-    background-color: red;
+    height: 40vh;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    margin: -2.5rem ;
+    padding: var(--spacer-biggest);
+}
+.row {
+    display: flex;
+}
+
+.col-4 {
+    flex: 60%;
+    padding: var(--spacer-biggest);
+    justify-content: center;
+}
+
+.col-3 {
+    flex: 20%;
+    padding: var(--spacer-biggest);
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
 }
