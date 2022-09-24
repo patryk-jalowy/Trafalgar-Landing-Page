@@ -9,33 +9,36 @@ foot.innerHTML = `
 <div class="footer-container">
     <div class="row">
         <div class="col-4">
+            <div><slot name="logo"></div>
+            <p><slot name="info"></p>
         </div>
         <div class="col-3">
-            <h2></h2>
+            <h3><slot name="header-1"></h3>
             <ul>
-                <li slot name="first-1"></li>
-                <li slot name="second-1"></li>
-                <li slot name="third-1"></li>
-                <li slot name="fourth-1"></li>
+                <li><slot name="first-1"></li>
+                <li><slot name="second-1"></li>
+                <li><slot name="third-1"></li>
+                <li><slot name="fourth-1"></li>
             </ul>
         </div>
         <div class="col-3">
-            <h2></h2>
+            <h3><slot name="header-2"></h3>
                 <ul>
-                <li slot name="first-2"></li>
-                <li slot name="second-2"></li>
-                <li slot name="third-2"></li>
-                <li slot name="fourth-2"></li>
+                <li><slot name="first-2"></li>
+                <li><slot name="second-2"></li>
+                <li><slot name="third-2"></li>
+                <li><slot name="fourth-2"></li>
                 </ul>
         </div>
         <div class="col-3">
-        <h2></h2>
+        <h3><slot name="header-3"</h3>
             <ul>
-            <li slot name="first-3"></li>
-            <li slot name="second-3"></li>
-            <li slot name="third-3"></li>
-            <li slot name="fourth-3"></li>
+            <li><slot name="first-3"></li>
+            <li><slot name="second-3"></li>
+            <li><slot name="third-3"></li>
+            <li><slot name="fourth-3"></li>
             </ul>
+        </div>
     </div>
 </div>
 `
