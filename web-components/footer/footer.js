@@ -11,9 +11,10 @@ foot.innerHTML = `
         <div class="col-4">
             <div><slot name="logo"></div>
             <p><slot name="info"></p>
+            <p><slot name="copyright"></p>
         </div>
         <div class="col-3">
-            <h3><slot name="header-1"></h3>
+            <h4><slot name="header-1"></h4>
             <ul>
                 <li><slot name="first-1"></li>
                 <li><slot name="second-1"></li>
@@ -22,7 +23,7 @@ foot.innerHTML = `
             </ul>
         </div>
         <div class="col-3">
-            <h3><slot name="header-2"></h3>
+            <h4><slot name="header-2"></h4>
                 <ul>
                 <li><slot name="first-2"></li>
                 <li><slot name="second-2"></li>
@@ -31,7 +32,7 @@ foot.innerHTML = `
                 </ul>
         </div>
         <div class="col-3">
-        <h3><slot name="header-3"</h3>
+        <h4><slot name="header-3"</h4>
             <ul>
             <li><slot name="first-3"></li>
             <li><slot name="second-3"></li>
