@@ -2,26 +2,20 @@ const foot = document.createElement('template')
 
 foot.innerHTML = `
 <style>
-@import "/web-components/footer/footer.css";
-
+    @import "/web-components/footer/footer.css";
 </style>
 
 <div class="footer-container">
     <div class="row">
+    
         <div class="col-4">
-            <div><slot name="logo"></div>
-            <p><slot name="info"></p>
-            <p><slot name="copyright"></p>
+            <slot name="company-information"></slot>
         </div>
+        
         <div class="col-3">
-            <h4><slot name="header-1"></h4>
-            <ul>
-                <li><slot name="first-1"></li>
-                <li><slot name="second-1"></li>
-                <li><slot name="third-1"></li>
-                <li><slot name="fourth-1"></li>
-            </ul>
+            <slot name="list-1"></slot>
         </div>
+        
         <div class="col-3">
             <h4><slot name="header-2"></h4>
                 <ul>
@@ -43,14 +37,16 @@ foot.innerHTML = `
     </div>
 </div>
 `
-class Footer extends HTMLElement {
-  constructor () {
-    super()
-    this.attachShadow({ mode: 'open' })
-    this.shadowRoot.appendChild(foot.content.cloneNode(true))
-  }
 
-  connectedCallback () {}
+class Footer extends HTMLElement {
+    constructor() {
+        super()
+        this.attachShadow({mode: 'open'})
+        this.shadowRoot.appendChild(foot.content.cloneNode(true))
+    }
+
+    connectedCallback() {
+    }
 }
 
 window.customElements.define('site-footer', Footer)

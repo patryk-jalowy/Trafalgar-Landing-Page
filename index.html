@@ -11,83 +11,123 @@
 </head>
 
 <body>
-    <navigation-bar activeTab="home">
-        <a class="brand" slot="brand" href="">
-            <img src="assets/img/logo.svg" alt="Home">
-        </a>
-        <a href="">Home</a>
-        <a href="">Find a doctor</a>
-        <a href="">Apps</a>
-        <a href="">Testimonials</a>
-        <a href="">About Us</a>
-    </navigation-bar>
+<navigation-bar activeTab="home">
+    <a class="brand" slot="brand" href="">
+        <img src="assets/img/logo.svg" alt="Home">
+    </a>
+    <a href="">Home</a>
+    <a href="">Find a doctor</a>
+    <a href="">Apps</a>
+    <a href="">Testimonials</a>
+    <a href="">About Us</a>
+</navigation-bar>
 
-    <site-section>
-        <div class="text-content" slot="slot-one">
-            <h1>Virtual healthcare for you</h1>
-            <p>Trafalgar provides progressive and afordable healthcare, accesiible on mobile and online for everyone</p>
-            <button class="button primary">Consult today</button>
-        </div>
-        <div class="img-content" slot="slot-two">
-            <img src="/assets/img/trafalgar-header illustration 1.svg" alt="">
-        </div>
-    </site-section>
+<site-section>
+    <div class="text-content" slot="slot-one">
+        <h1>Virtual healthcare for you</h1>
+        <p>Trafalgar provides progressive and afordable healthcare, accesiible on mobile and online for everyone</p>
+        <button class="button primary">Consult today</button>
+    </div>
+    <div class="img-content" slot="slot-two">
+        <img src="/assets/img/trafalgar-header illustration 1.svg" alt="">
+    </div>
+</site-section>
 
-    <site-section>
-        <div class="img-content" slot="slot-one">
-            <img src="/assets/img/trafalgar-illustration sec02 .svg" alt="">
-        </div>
-        <div class="text-content" slot="slot-two">
-            <h1>Leading helathcare provider</h1>
-            <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
-                To us, it’s not just work. We take pride
-                in the solutions we deliver</p>s
-            <button class="button secondary">Learn more</button>
-        </div>
-    </site-section>
+<site-section>
+    <div class="img-content" slot="slot-one">
+        <img src="/assets/img/trafalgar-illustration sec02 .svg" alt="">
+    </div>
+    <div class="text-content" slot="slot-two">
+        <h1>Leading helathcare provider</h1>
+        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
+            To us, it’s not just work. We take pride
+            in the solutions we deliver</p>s
+        <button class="button secondary">Learn more</button>
+    </div>
+</site-section>
 
-    <site-section>
-        <div class="text-content" slot="slot-one">
-            <h1>Download our mobile apps</h1>
-            <p>Our dedicated patient engagement app and 
-                web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                or administrative hassle) and securely</p>
-            <button class="button secondary">Download ↓</button>
-        </div>
-        <div class="img-content" slot="slot-two">
-            <img src="/assets/img/trafalgar-illustration sec03 1.svg" alt="">
-        </div>
-    </site-section>
-    <site-footer>
-        <div class="footer-logo"slot="logo">
+<site-section>
+    <div class="text-content" slot="slot-one">
+        <h1>Download our mobile apps</h1>
+        <p>Our dedicated patient engagement app and
+            web portal allow you to access information instantaneously (no tedeous form, long calls,
+            or administrative hassle) and securely</p>
+        <button class="button secondary">Download ↓</button>
+    </div>
+    <div class="img-content" slot="slot-two">
+        <img src="/assets/img/trafalgar-illustration sec03 1.svg" alt="">
+    </div>
+</site-section>
+
+<site-footer>
+
+    <div slot="company-information" class="company-information">
+        <div class="footer-logo">
             <svg height="40" width="40">
-                <circle cx="20" cy="20" r="20" fill="white" />
+                <circle cx="20" cy="20" r="20" fill="white"/>
                 <text x="50%" y="50%" text-anchor="middle" stroke-width="2px" stroke="#5A98F2" dy="0.4rem">T</text>
-              </svg>
-              <h4>Trafalgar</h4>
+            </svg>
+            <h4>Trafalgar</h4>
         </div>
-         <p slot="info">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
-            for everyone</p>
-         <p slot="copyright"> ©Trafalgar PTY LTD 2020. All rights reserved</p>
-         <div slot="header-1">Company</div>
-            <li slot="first-1">About</li>
-            <li slot="second-1">Testimonials</li>
-            <li slot="third-1">Find a doctor</li>
-            <li slot="fourth-1">Apps</li>
-         <div slot="header-2">Region</div>
-            <li slot="first-2">Indonesia</li>
-            <li slot="second-2">Singapore</li>
-            <li slot="third-2">Hongkong</li>
-            <li slot="fourth-2">Canada</li>
-         <div slot="header-3">Help</div>
-            <li slot="first-3">Help center</li>
-            <li slot="second-3">Contact support</li>
-            <li slot="third-3">Instruction</li>
-            <li slot="fourth-3">How it works</li>
-    </site-footer>
-    <script src="/web-components/footer/footer.js"></script>
-    <script src="/web-components/section/site-section.js"></script>
-    <script src="/web-components/navbar/navbar.js"></script>
+
+        <p>
+            Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online
+            for everyone
+        </p>
+
+        <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+    </div>
+
+
+    <!--    <div class="footer-logo" slot="logo">-->
+    <!--        <svg height="40" width="40">-->
+    <!--            <circle cx="20" cy="20" r="20" fill="white"/>-->
+    <!--            <text x="50%" y="50%" text-anchor="middle" stroke-width="2px" stroke="#5A98F2" dy="0.4rem">T</text>-->
+    <!--        </svg>-->
+    <!--        <h4>Trafalgar</h4>-->
+    <!--    </div>-->
+
+    <!--    <p slot="info">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online-->
+    <!--        for everyone</p>-->
+
+    <!--    <p slot="copyright"> ©Trafalgar PTY LTD 2020. All rights reserved</p>-->
+
+    <!--  Lists should be injected this way  -->
+
+    <div slot="list-1">
+        <h4>Company</h4>
+
+        <ul>
+            <li>About</li>
+            <li>Testimonials</li>
+            <li>Find a doctor</li>
+            <li>Apps</li>
+        </ul>
+    </div>
+
+
+    <!--  Lists below should be refactored  -->
+
+    <div slot="header-2">Region</div>
+
+    <li slot="first-2">Indonesia</li>
+    <li slot="second-2">Singapore</li>
+    <li slot="third-2">Hongkong</li>
+    <li slot="fourth-2">Canada</li>
+
+
+    <div slot="header-3">Help</div>
+
+    <li slot="first-3">Help center</li>
+    <li slot="second-3">Contact support</li>
+    <li slot="third-3">Instruction</li>
+    <li slot="fourth-3">How it works</li>
+
+</site-footer>
+
+<script src="/web-components/footer/footer.js"></script>
+<script src="/web-components/section/site-section.js"></script>
+<script src="/web-components/navbar/navbar.js"></script>
 </body>
 
 </html>
