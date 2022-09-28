@@ -17,36 +17,24 @@ foot.innerHTML = `
         </div>
         
         <div class="col-3">
-            <h4><slot name="header-2"></h4>
-                <ul>
-                <li><slot name="first-2"></li>
-                <li><slot name="second-2"></li>
-                <li><slot name="third-2"></li>
-                <li><slot name="fourth-2"></li>
-                </ul>
+            <slot name="list-2"></slot>
         </div>
         <div class="col-3">
-        <h4><slot name="header-3"</h4>
-            <ul>
-            <li><slot name="first-3"></li>
-            <li><slot name="second-3"></li>
-            <li><slot name="third-3"></li>
-            <li><slot name="fourth-3"></li>
-            </ul>
+            <slot name="list-3"></slot>
         </div>
     </div>
 </div>
 `
 
 class Footer extends HTMLElement {
-    constructor() {
-        super()
-        this.attachShadow({mode: 'open'})
-        this.shadowRoot.appendChild(foot.content.cloneNode(true))
-    }
+  constructor () {
+    super()
+    this.attachShadow({ mode: 'open' })
+    this.shadowRoot.appendChild(foot.content.cloneNode(true))
+  }
 
-    connectedCallback() {
-    }
+  connectedCallback () {
+  }
 }
 
 window.customElements.define('site-footer', Footer)
