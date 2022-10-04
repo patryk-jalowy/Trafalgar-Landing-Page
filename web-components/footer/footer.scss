@@ -8,18 +8,14 @@
 .row {
     display: flex;
 }
-
-.col-4 {
-    flex: 60%;
+.row > div {
+    flex: 20%;
     padding: var(--spacer-biggest);
     justify-content: center;
 }
 
-
-.col-3 {
-    flex: 20%;
-    padding: var(--spacer-biggest);
-    justify-content: center;
+.row :first-child {
+    flex: 60%
 }
 
 ul {
@@ -28,5 +24,5 @@ ul {
 }
 
 li {
- line-height: 2rem;
+ line-height: var(--spacer-bigger-footer);
 }

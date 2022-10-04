@@ -8,20 +8,22 @@ foot.innerHTML = `
 <div class="footer-container">
     <div class="row">
     
-        <div class="col-4">
+        <div>
             <slot name="company-information"></slot>
         </div>
         
-        <div class="col-3">
+        <div>
             <slot name="list-1"></slot>
         </div>
         
-        <div class="col-3">
+        <div>
             <slot name="list-2"></slot>
         </div>
-        <div class="col-3">
+        
+        <div>
             <slot name="list-3"></slot>
         </div>
+
     </div>
 </div>
 `
