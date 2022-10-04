@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   width: 100%;
 }
-
 header div {
   align-items: center;
   background-color: var(--navbar-bg-color);
@@ -12,7 +11,6 @@ header div {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 header nav {
   background-color: var(--navbar-bg-color);
   display: flex;

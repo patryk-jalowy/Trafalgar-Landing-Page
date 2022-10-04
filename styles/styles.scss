@@ -17,6 +17,7 @@
   --font-size-normal: 1.125rem;
   --font-weight-normal: 500;
   --font-weight-bold: 700;
+  --footer-height: 300px;
 }
 
 body {
@@ -60,7 +61,6 @@ ul, ol {
 
 .button {
   border-radius: var(--spacer-biggest);
-  font-weight: var(--font-weight-normal);
   width: fit-content;
   margin: var(--spacer-big) 0;
   font-weight: var(--font-weight-bold);
