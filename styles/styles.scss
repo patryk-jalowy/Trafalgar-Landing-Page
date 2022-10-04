@@ -19,11 +19,13 @@
   --font-weight-bold: 700;
   --footer-height: 300px;
 }
-
+.content {
+  margin: var(--spacer-biggest);
+}
 body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
-  margin: var(--spacer-biggest);
+  margin: 0;
 }
 
 ul, ol {
