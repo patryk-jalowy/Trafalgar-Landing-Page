@@ -2,3 +2,10 @@
 /.idea
 
 styles/styles.css
+styles/styles.css.map
+web-components/footer/footer.css
+web-components/footer/footer.css.map
+web-components/navbar/navbar.css
+web-components/navbar/navbar.css.map
+web-components/section/site-section.css
+web-components/section/site-section.css.map
