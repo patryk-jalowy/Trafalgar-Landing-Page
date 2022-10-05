@@ -15,6 +15,7 @@ hr {
     border-radius: 5px;
     width: 56px;
 }
+
 .grid {
     display: flex;
     width: 1120px;
@@ -25,6 +26,7 @@ hr {
 .row {
     display: flex;
     flex:100%;
+    padding: var(--spacer-big);
     flex-direction:row;
     align-items: center;
 }  
@@ -52,4 +54,9 @@ hr {
 }
 .button-container {
     margin: var(--spacer-biggest) auto ;
+}
+img {
+    position: absolute;
+    top:auto;
+    z-index: -5;
 }
