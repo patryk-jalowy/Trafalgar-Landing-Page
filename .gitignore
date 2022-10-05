@@ -2,3 +2,5 @@
 /.idea
 
 styles/styles.css
+web-components/grid/grid.css
+web-components/grid/grid.css.map
