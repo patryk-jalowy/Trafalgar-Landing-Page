@@ -1,0 +1,25 @@
+
+.grid {
+    display: flex;
+    width: 1120px;
+    margin: auto;
+    background: red;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    flex:100%;
+    flex-direction:row;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+}  
+
+.col {
+    background:yellow;
+    flex:33%;
+    height: 350px;
+    pad: var(--spacer-small);
+
+}
