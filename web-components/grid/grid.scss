@@ -3,7 +3,7 @@ h1 {
     margin: 2rem auto 2;
 }
 p {
-    margin: 1.5rem auto 8rem;
+    margin: 1.5rem auto 4rem;
     text-align: center;
     width: 830px;
     color: var(--text-color-primary);
@@ -18,7 +18,7 @@ hr {
 .grid {
     display: flex;
     width: 1120px;
-    margin: var(--spacer-big) auto;
+    margin: var(--spacer-biggest) auto;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -35,5 +35,21 @@ hr {
     height: 350px;
     align-items: center;
     justify-content: center;
-
+}
+.button {
+    border-radius: var(--spacer-biggest);
+    font-weight: var(--font-weight-normal);
+    width: fit-content;
+    margin: var(--spacer-big) 0;
+    font-weight: var(--font-weight-bold);
+    padding: var(--spacer-small) var(--spacer-biggest);
+  
+    &.secondary {
+      background-color: var(--navbar-bg-color);
+      color: var(--primary-color);
+      border: solid 1px var(--primary-color);
+    }
+}
+.button-container {
+    margin: var(--spacer-biggest) auto ;
 }
