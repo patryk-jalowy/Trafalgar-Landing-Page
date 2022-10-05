@@ -18,7 +18,7 @@ hr {
 
 .grid {
     display: flex;
-    width: 1120px;
+    width: 70%;
     margin: var(--spacer-biggest) auto;
     align-items: center;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@ hr {
 .col {
     display: flex;
     flex:33%;
-    height: 350px;
+    height: 340px;
     align-items: center;
     justify-content: center;
 }
@@ -55,8 +55,14 @@ hr {
 .button-container {
     margin: var(--spacer-biggest) auto ;
 }
-img {
+.splash {
     position: absolute;
     top:auto;
+    z-index: -5;
+}
+.dots {
+    position: absolute;
+    right: 15%;
+    transform: translateY(20rem);
     z-index: -5;
 }

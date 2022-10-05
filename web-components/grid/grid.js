@@ -9,7 +9,8 @@ grid.innerHTML =
 <h1 class="title">Our services</h1>
 <hr>
 <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
-<img src="/assets/card-logos/splash.svg">
+<img class="splash" src="/assets/card-logos/splash.svg">
+<img class="dots" src="/assets/card-logos/dots2.svg">
 </div>
 <div class="grid">
 
