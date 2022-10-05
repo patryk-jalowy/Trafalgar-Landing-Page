@@ -1,7 +1,11 @@
+
 .card {
-    background: red;
     width: 280px;
     height:280px;
     padding: 2rem;
     border-radius: var(--spacer-big);
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+site-card p{
+    color: var(--text-color-primary);
 }

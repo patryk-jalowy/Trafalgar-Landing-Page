@@ -5,7 +5,11 @@ grid.innerHTML =
 <style>
     @import "/web-components/grid/grid.css";
 </style>
-
+<div>
+<h1 class="title">Our services</h1>
+<hr>
+<p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+</div>
 <div class="grid">
 
   <div class="row">
@@ -32,6 +36,7 @@ grid.innerHTML =
     </div>
   </div>
 </div>
+
 `
 class Grid extends HTMLElement {
   constructor () {

@@ -1,9 +1,24 @@
-
+h1 {
+    text-align: center;
+    margin: 2rem auto;
+}
+p {
+    margin: 25px auto;
+    text-align: center;
+    width: 830px;
+    color: var(--text-color-primary);
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+    width: 56px;
+}
 .grid {
     display: flex;
     width: 1120px;
     margin: var(--spacer-big) auto;
-    background: red;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -11,13 +26,11 @@
     display: flex;
     flex:100%;
     flex-direction:row;
-    background-color: blue;
     align-items: center;
 }  
 
 .col {
     display: flex;
-    background:yellow;
     flex:33%;
     height: 350px;
     align-items: center;
