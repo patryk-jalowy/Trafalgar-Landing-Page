@@ -13,13 +13,14 @@
     flex-direction:row;
     background-color: blue;
     align-items: center;
-    justify-content: center;
 }  
 
 .col {
-
+    display: flex;
     background:yellow;
     flex:33%;
     height: 350px;
+    align-items: center;
+    justify-content: center;
 
 }

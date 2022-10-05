@@ -7,9 +7,15 @@ card.innerHTML =
 </style>
 
 <div class="card">
-  <img slot name="picture"></img>
-  <h3 slot name="heading"></h3>
-  <p slot name="text"></p>
+    <div class="picture">
+        <slot name="picture">
+    </div>
+    <div class="heading">
+        <slot name="heading">
+    </div>
+    <div class="card-text">
+        <slot name="card-text">
+    </div>
 </div>
 `
 class Card extends HTMLElement {
