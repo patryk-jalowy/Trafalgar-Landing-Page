@@ -2,7 +2,7 @@
 .grid {
     display: flex;
     width: 1120px;
-    margin: auto;
+    margin: var(--spacer-big) auto;
     background: red;
     align-items: center;
     flex-wrap: wrap;
@@ -17,9 +17,9 @@
 }  
 
 .col {
+
     background:yellow;
     flex:33%;
     height: 350px;
-    pad: var(--spacer-small);
 
 }

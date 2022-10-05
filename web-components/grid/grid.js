@@ -7,17 +7,30 @@ grid.innerHTML =
 </style>
 
 <div class="grid">
-    <div class="row">
-        <div slot  name="first" class="col"></div>
-        <div slot  name="second" class="col"></div>
-        <div slot name="third" class="col"></div>
-    </div>
 
-    <div class="row">
-        <div slot name="fourth" class="col"></div>
-        <div slot name="fifth" class="col"></div>
-        <div slot name="sixth" class="col"></div>
+  <div class="row">
+    <div class="col">
+      <slot name="first">
     </div>
+    <div class="col">
+      <slot name="second">
+    </div>
+    <div class="col">
+      <slot name="third">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <slot name="fourth">
+    </div>
+    <div class="col">
+      <slot name="fifth">
+    </div>
+    <div class="col">
+      <slot name="sixth">
+    </div>
+  </div>
 </div>
 `
 class Grid extends HTMLElement {
