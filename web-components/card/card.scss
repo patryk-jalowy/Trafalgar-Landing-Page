@@ -1,11 +1,23 @@
 
 .card {
+    position: relative;
     width: 280px;
     height:280px;
     padding: 2rem;
     border-radius: var(--spacer-big);
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
-site-card p{
+.picture {
+    position: absolute;
+    bottom: 60%;
+}
+.heading {
+    position: absolute;
+    bottom: 40%;
+}
+.card-text{
+    width: 73%;
+    position: absolute;
+    bottom: 20%;
     color: var(--text-color-primary);
 }
