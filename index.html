@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Trafalgar Landing Page</title>
 </head>
@@ -69,13 +70,13 @@
                 <p slot="card-text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
             </site-card>
         </div>
-        <div slot="sixth">
-            <site-card>
+<!--        <div slot="sixth">-->
+            <site-card slot="sixth">
                 <img slot="picture" src="/assets/card-logos/list.svg">
                 <h3 slot="heading">Tracking</h3>
                 <p slot="card-text">Track and save your medical history and health data</p>
             </site-card>
-        </div>
+<!--        </div>-->
     </site-grid>
 
     <site-section>
@@ -94,8 +95,8 @@
     <site-section>
         <div class="text-content" slot="slot-one">
             <h1>Download our mobile apps</h1>
-            <p>Our dedicated patient engagement app and 
-                web portal allow you to access information instantaneously (no tedeous form, long calls, 
+            <p>Our dedicated patient engagement app and
+                web portal allow you to access information instantaneously (no tedeous form, long calls,
                 or administrative hassle) and securely</p>
             <button class="button secondary">Download ↓</button>
         </div>
@@ -103,6 +104,7 @@
             <img src="/assets/img/trafalgar-illustration sec03 1.svg" alt="">
         </div>
     </site-section>
+
     <script src="/web-components/section/site-section.js"></script>
     <script src="/web-components/navbar/navbar.js"></script>
     <script src="/web-components/grid/grid.js"></script>

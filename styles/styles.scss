@@ -19,7 +19,6 @@
 body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
-  // margin: var(--spacer-biggest);
 }
 
 .img-content {
@@ -44,28 +43,6 @@ body {
 .text-content p {
   line-height: var(--spacer-bigger);
   color: var(--text-color-primary);
-}
-
-.button {
-  border-radius: var(--spacer-biggest);
-  font-weight: var(--font-weight-normal);
-  width: fit-content;
-  margin: var(--spacer-big) 0;
-  font-weight: var(--font-weight-bold);
-  padding: var(--spacer-small) var(--spacer-biggest);
-
-  &.primary {
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--navbar-bg-color);
-
-  }
-
-  &.secondary {
-    background-color: var(--navbar-bg-color);
-    color: var(--primary-color);
-    border: solid 1px var(--primary-color);
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

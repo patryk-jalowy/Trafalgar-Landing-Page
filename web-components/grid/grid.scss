@@ -1,68 +1,76 @@
-h1 {
-    text-align: center;
-    margin: 2rem auto 2;
-}
-p {
-    margin: 1.5rem auto 4rem;
-    text-align: center;
-    width: 830px;
-    color: var(--text-color-primary);
-}
-hr {
-    border: none;
-    height: 2px;
-    background-color: black;
-    border-radius: 5px;
-    width: 56px;
-}
+.container {
+  position: relative;
 
-.grid {
+  .splash, .dots {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .splash {
+    top: auto;
+  }
+
+  .dots {
+    right: 10%;
+    bottom: 20%;
+  }
+
+  .grid, .section-heading {
     display: flex;
-    width: 70%;
-    margin: var(--spacer-biggest) auto;
-    align-items: center;
     flex-wrap: wrap;
-}
-.row {
-    display: flex;
-    flex:100%;
-    padding: var(--spacer-big);
-    flex-direction:row;
-    align-items: center;
-}  
+    margin: 0 auto;
+  }
 
-.col {
-    display: flex;
-    flex:33%;
-    height: 340px;
-    align-items: center;
-    justify-content: center;
-}
-.button {
-    border-radius: var(--spacer-biggest);
-    font-weight: var(--font-weight-normal);
-    width: fit-content;
-    margin: var(--spacer-big) 0;
-    font-weight: var(--font-weight-bold);
-    padding: var(--spacer-small) var(--spacer-biggest);
-  
-    &.secondary {
-      background-color: var(--navbar-bg-color);
-      color: var(--primary-color);
-      border: solid 1px var(--primary-color);
+  .grid {
+    width: 60rem;
+    justify-content: space-around;
+    .col {
+      flex: 0 0 32%;
+      height: fit-content;
+      margin-bottom: var(--spacer-big);
     }
+  }
+
+  .section-heading {
+    width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    h1, p {
+      text-align: center;
+    }
+
+    hr {
+      height: 2px;
+      background-color: black;
+      border-radius: 5px;
+      width: 56px;
+    }
+
+    p {
+      color: var(--text-color-primary);
+    }
+  }
+
+  // TODO - should be removed when button as web component implementation
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    .button {
+      border-radius: var(--spacer-biggest);
+      width: fit-content;
+      margin: var(--spacer-big) 0;
+      font-weight: var(--font-weight-bold);
+      padding: var(--spacer-small) var(--spacer-biggest);
+
+      &.secondary {
+        background-color: var(--navbar-bg-color);
+        color: var(--primary-color);
+        border: solid 1px var(--primary-color);
+      }
+    }
+  }
+
 }
-.button-container {
-    margin: var(--spacer-biggest) auto ;
-}
-.splash {
-    position: absolute;
-    top:auto;
-    z-index: -5;
-}
-.dots {
-    position: absolute;
-    right: 15%;
-    transform: translateY(20rem);
-    z-index: -5;
-}
+
+
