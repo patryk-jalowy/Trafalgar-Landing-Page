@@ -27,7 +27,7 @@
     color: var(--primary-color);
     border: solid 1px var(--primary-color);
       &:hover{
-        border: none;
+      border: solid 1px transparent;
       background-color: var(--primary-color);
       color: var(--navbar-bg-color);
       }
