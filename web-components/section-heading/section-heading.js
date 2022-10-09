@@ -7,10 +7,11 @@ sectionHeading.innerHTML =
 </style>
 
 <div class="container">
-<div class="section-heading">
-    <h1><slot name="title"></slot></h1>
-    <hr>
-    <p><slot name="paragraph"></slot></p>
+    <div class="section-heading">
+        <h1><slot name="title"></slot></h1>
+        <hr>
+        <p><slot name="paragraph"></slot></p>
+    </div>
 </div>
 `
 class Heading extends HTMLElement {

@@ -31,12 +31,6 @@ grid.innerHTML =
           <slot name="sixth">
         </div>    
     </div>
-
-  <div class="button-container">
-    <button class="button secondary">Learn more</button>
-  </div>
-  
-</div>
 `
 
 class Grid extends HTMLElement {

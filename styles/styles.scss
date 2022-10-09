@@ -15,6 +15,9 @@
   --font-weight-normal: 500;
   --font-weight-bold: 700;
 }
+html{
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Mulish', sans-serif;
