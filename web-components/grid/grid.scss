@@ -8,14 +8,15 @@
 
   .splash {
     top: auto;
+    bottom: 30%;
   }
 
   .dots {
     right: 10%;
-    bottom: 20%;
+    bottom: 50%;
   }
 
-  .grid, .section-heading {
+  .grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -30,28 +31,6 @@
       margin-bottom: var(--spacer-big);
     }
   }
-
-  .section-heading {
-    width: 50rem;
-    flex-direction: column;
-    justify-content: center;
-    h1, p {
-      text-align: center;
-    }
-
-    hr {
-      height: 2px;
-      background-color: black;
-      border-radius: 5px;
-      width: 56px;
-    }
-
-    p {
-      color: var(--text-color-primary);
-    }
-  }
-
-  // TODO - should be removed when button as web component implementation
 
   .button-container {
     display: flex;
