@@ -3,7 +3,7 @@
   width: fit-content;
   margin: var(--spacer-big) 0;
   font-weight: var(--font-weight-bold);
-  font-size: 0.8rem;
+  font-size: var(--font-size-heading);
   padding: var(--spacer-small) var(--spacer-biggest);
     &:hover {
       cursor: pointer;
