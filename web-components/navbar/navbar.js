@@ -1,4 +1,4 @@
-const navbar = document.createElement('template');
+const navbar = document.createElement('template')
 
 navbar.innerHTML = `
 <style>
@@ -18,22 +18,18 @@ navbar.innerHTML = `
 `
 
 class Navbar extends HTMLElement {
-
-  constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.appendChild(navbar.content.cloneNode(true));
+  constructor () {
+    super()
+    this.attachShadow({ mode: 'open' })
+    this.shadowRoot.appendChild(navbar.content.cloneNode(true))
   }
 
-  connectedCallback() {
-    
+  connectedCallback () {
     const data = {
       header: this.shadowRoot.querySelector('header'),
-      nav: this.shadowRoot.querySelector('header nav'),
+      nav: this.shadowRoot.querySelector('header nav')
     }
-
   }
-
 }
 
 window.customElements.define('navigation-bar', Navbar)

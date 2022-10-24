@@ -3,13 +3,13 @@ const grid = document.createElement('template')
 grid.innerHTML =
     `
 <style>
-    @import "/web-components/grid/grid.css";
+    @import "web-components/grid/grid.css";
 </style>
 
 <div class="container">
 
-    <img class="splash" src="/assets/card-logos/splash.svg">
-    <img class="dots" src="/assets/card-logos/dots2.svg">
+    <img class="splash" src="assets/card-logos/splash.svg">
+    <img class="dots" src="assets/card-logos/dots2.svg">
 
     <div class="grid">
             <div class="col">

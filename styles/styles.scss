@@ -5,16 +5,20 @@
   --navbar-link-active-color: #333333;
   --text-color-primary: #5f5e5e;
   --primary-color: rgb(54, 120, 244);
+  --primary-color-gradient: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  --spacer-smallest: 0.25rem;
   --spacer-smaller: 0.5rem;
   --spacer-small: 0.75rem;
   --spacer-default: 1rem;
   --spacer-big: 1.25rem;
   --spacer-bigger: 1.5rem;
+  --spacer-bigger-footer: 2rem;
   --spacer-biggest: 2.5rem;
   --font-size-normal: 1.125rem;
   --font-size-heading: 0.8rem;
   --font-weight-normal: 500;
   --font-weight-bold: 700;
+  --footer-height: 300px;
 }
 html{
   box-sizing: border-box;
@@ -23,6 +27,16 @@ html{
 body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: var(--spacer-smallest) 0;
+  }
 }
 
 .img-content {

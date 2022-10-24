@@ -3,7 +3,7 @@ const sectionHeading = document.createElement('template')
 sectionHeading.innerHTML =
 `
 <style>
-    @import "/web-components/section-heading/section-heading.css";
+    @import "web-components/section-heading/section-heading.css";
 </style>
 
 <div class="container">

@@ -3,7 +3,7 @@ const card = document.createElement('template')
 card.innerHTML =
 `
 <style>
-    @import "/web-components/card/card.css";
+    @import "web-components/card/card.css";
 </style>
 
 <div class="card">
