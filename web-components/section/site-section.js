@@ -7,7 +7,7 @@ template.innerHTML = `
 
 <div class="section-container">
   <div class="row">
-    <img class="dots-img" src="/assets/img/dots.svg">
+    <img class="dots-img" src="assets/img/dots.svg">
     <div class="col-6">
         <slot name="slot-one"></slot>
     </div>

@@ -15,13 +15,15 @@
   --spacer-bigger-footer: 2rem;
   --spacer-biggest: 2.5rem;
   --font-size-normal: 1.125rem;
+  --font-size-heading: 0.8rem;
   --font-weight-normal: 500;
   --font-weight-bold: 700;
   --footer-height: 300px;
 }
-.content {
-  margin: var(--spacer-biggest);
+html{
+  box-sizing: border-box;
 }
+
 body {
   font-family: 'Mulish', sans-serif;
   background-color: var(--navbar-bg-color);
@@ -61,37 +63,4 @@ ul, ol {
   color: var(--text-color-primary);
 }
 
-.button {
-  border-radius: var(--spacer-biggest);
-  width: fit-content;
-  margin: var(--spacer-big) 0;
-  font-weight: var(--font-weight-bold);
-  padding: var(--spacer-small) var(--spacer-biggest);
-
-  &.primary {
-    border: none;
-    background-color: var(--primary-color);
-    color: var(--navbar-bg-color);
-
-  }
-
-  &.secondary {
-    background-color: var(--navbar-bg-color);
-    color: var(--primary-color);
-    border: solid 1px var(--primary-color);
-  }
-}
-
-.company-information {
-  .footer-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    h4 {
-      margin: 0 0 0 var(--spacer-smaller);
-    }
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
-

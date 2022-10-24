@@ -1,0 +1,25 @@
+  .container{
+    margin: var(--spacer-biggest);
+  }
+  .section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 65rem;
+    flex-direction: column;
+    justify-content: center;
+    h1, p {
+      text-align: center;
+    }
+
+    hr {
+      height: 2px;
+      background-color: black;
+      border-radius: 5px;
+      width: 56px;
+    }
+
+    p {
+      color: var(--text-color-primary);
+    }
+  }

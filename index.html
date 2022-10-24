@@ -6,65 +6,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="web-components/button/button.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Trafalgar Landing Page</title>
 </head>
 
 <body>
-<div class="content">
-<navigation-bar activeTab="home">
-    <a class="brand" slot="brand" href="">
-        <img src="assets/img/logo.svg" alt="Home">
-    </a>
-    <a href="">Home</a>
-    <a href="">Find a doctor</a>
-    <a href="">Apps</a>
-    <a href="">Testimonials</a>
-    <a href="">About Us</a>
-</navigation-bar>
+    <navigation-bar activeTab="home">
+        <a class="brand" slot="brand" href="">
+            <img src="assets/img/logo.svg" alt="Home">
+        </a>
+        <a href="">Home</a>
+        <a href="">Find a doctor</a>
+        <a href="">Apps</a>
+        <a href="">Testimonials</a>
+        <a href="">About Us</a>
+    </navigation-bar>
 
-<site-section>
-    <div class="text-content" slot="slot-one">
-        <h1>Virtual healthcare for you</h1>
-        <p>Trafalgar provides progressive and afordable healthcare, accesiible on mobile and online for everyone</p>
-        <button class="button primary">Consult today</button>
-    </div>
-    <div class="img-content" slot="slot-two">
-        <img src="/assets/img/trafalgar-header illustration 1.svg" alt="">
-    </div>
-</site-section>
+    <site-section>
+        <div class="text-content" slot="slot-one">
+            <h1>Virtual healthcare for you</h1>
+            <p>Trafalgar provides progressive and afordable healthcare, accesiible on mobile and online for everyone</p>
+            <custom-button>
+                <span class="button primary" slot="button-text">Consult today</span>
+            </custom-button>
+        </div>
+        <div class="img-content" slot="slot-two">
+            <img src="assets/img/trafalgar-header illustration 1.svg" alt="">
+        </div>
+    </site-section>
+    <section-heading>
+        <slot slot="title">Our services</slot>
+        <slot slot="paragraph">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment 
+            with our highly qualified doctors you can consult with us which type of service is suitable for your health</slot>
+    </section-heading>
+    <site-grid>
 
-<site-section>
-    <div class="img-content" slot="slot-one">
-        <img src="/assets/img/trafalgar-illustration sec02 .svg" alt="">
-    </div>
-    <div class="text-content" slot="slot-two">
-        <h1>Leading helathcare provider</h1>
-        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
-            To us, it’s not just work. We take pride
-            in the solutions we deliver</p>s
-        <button class="button secondary">Learn more</button>
-    </div>
-</site-section>
+        <site-card  slot="first">
+            <img slot="picture" src="assets/card-logos/Frame.svg">
+            <h3 slot="heading">Search doctor</h3>
+            <p slot="card-text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+        </site-card>
+  
+        <site-card slot="second">
+            <img slot="picture" src="assets/card-logos/jar.svg">
+            <h3 slot="heading">Online pharmacy</h3>
+            <p slot="card-text">Buy your medicines with our mobile application with a simple delivery system</p>
+        </site-card>
 
-<site-section>
-    <div class="text-content" slot="slot-one">
-        <h1>Download our mobile apps</h1>
-        <p>Our dedicated patient engagement app and
-            web portal allow you to access information instantaneously (no tedeous form, long calls,
-            or administrative hassle) and securely</p>
-        <button class="button secondary">Download ↓</button>
+    
+        <site-card slot="third">
+            <img slot="picture" src="assets/card-logos/patient.svg">
+            <h3 slot="heading">Consultation</h3>
+            <p slot="card-text">Free consultation with our trusted doctors and get the best recomendations</p>
+        </site-card>
+       
+    
+        <site-card slot="fourth">
+            <img slot="picture" src="assets/card-logos/reciept.svg">
+            <h3 slot="heading">Details info</h3>
+            <p slot="card-text">Free consultation with our trusted doctors and get the best recomendations</p>
+        </site-card>
+        
+        
+        <site-card slot="fifth">
+            <img slot="picture" src="assets/card-logos/case.svg">
+            <h3 slot="heading">Emergency care</h3>
+            <p slot="card-text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+        </site-card>
+     
+        <site-card slot="sixth">
+            <img slot="picture" src="assets/card-logos/list.svg">
+            <h3 slot="heading">Tracking</h3>
+            <p slot="card-text">Track and save your medical history and health data</p>
+        </site-card>
+
+    </site-grid>
+
+    <div style="display:flex; text-align:center; justify-content:center;margin:auto">
+        <custom-button class="button secondary">
+            <span slot="button-text">Learn more</span>
+        </custom-button>
     </div>
-    <div class="img-content" slot="slot-two">
-        <img src="/assets/img/trafalgar-illustration sec03 1.svg" alt="">
-    </div>
-</site-section>
+
+    <site-section>
+        <div class="img-content" slot="slot-one">
+            <img src="assets/img/trafalgar-illustration sec02 .svg" alt="">
+        </div>
+        <div class="text-content" slot="slot-two">
+            <h1>Leading helathcare provider</h1>
+            <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
+                To us, it’s not just work. We take pride
+                in the solutions we deliver</p>
+                <custom-button>
+                    <span class="button secondary" slot="button-text">Learn more</span>
+                </custom-button>
+        </div>
+    </site-section>
+
+    <site-section>
+        <div class="text-content" slot="slot-one">
+            <h1>Download our mobile apps</h1>
+            <p>Our dedicated patient engagement app and
+                web portal allow you to access information instantaneously (no tedeous form, long calls,
+                or administrative hassle) and securely</p>
+            <custom-button class="button secondary">
+                <span slot="button-text">Download ↓</span>
+            </custom-button>
+        </div>
+        <div class="img-content" slot="slot-two">
+            <img src="assets/img/trafalgar-illustration sec03 1.svg" alt="">
+        </div>
+    </site-section>
 
 
-<script src="/web-components/footer/footer.js"></script>
-<script src="/web-components/section/site-section.js"></script>
-<script src="/web-components/navbar/navbar.js"></script>
-</div>
+
+
 <site-footer>
 
     <div slot="company-information" class="company-information">
@@ -117,6 +174,15 @@
         </ul>
     </div>
 </site-footer>
-</body>
 
+<script src="web-components/footer/footer.js"></script>
+<script src="web-components/section/site-section.js"></script>
+<script src="web-components/navbar/navbar.js"></script>
+<script src="web-components/section-heading/section-heading.js"></script>
+<script src="web-components/grid/grid.js"></script>
+<script src="web-components/card/card.js"></script>
+<script src="web-components/button/button.js"></script>
+
+</body>
 </html>
+

@@ -2,7 +2,7 @@ const foot = document.createElement('template')
 
 foot.innerHTML = `
 <style>
-    @import "/web-components/footer/footer.css";
+    @import "web-components/footer/footer.css";
 </style>
 
 <div class="footer-container">
