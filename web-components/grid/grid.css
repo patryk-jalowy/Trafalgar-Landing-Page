@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+}
+.container .splash, .container .dots {
+  position: absolute;
+  z-index: -1;
+}
+.container .splash {
+  top: auto;
+  bottom: 22%;
+}
+.container .dots {
+  right: 10%;
+  bottom: 44%;
+}
+.container .grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.container .grid {
+  width: 60rem;
+  justify-content: space-around;
+}
+.container .grid .col {
+  flex: 0 0 32%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: var(--spacer-big);
+}/*# sourceMappingURL=grid.css.map */
