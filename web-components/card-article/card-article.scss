@@ -1,0 +1,29 @@
+.article {
+    position: relative;
+    height: fit-content;
+    width: auto;
+    border-radius: var(--spacer-big);
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    background: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+    p{
+        color: var(--text-color-primary);
+    }
+    .text{
+        padding: 0 var(--spacer-big);
+
+        .card-text {
+            color: var(--primary-color);
+          
+            :hover{
+                cursor:pointer;
+            }
+            }
+
+        .paragraph {
+            color: var(--text-color-primary);
+        }
+    }
+}
+

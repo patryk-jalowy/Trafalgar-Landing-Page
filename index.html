@@ -119,7 +119,43 @@
         </div>
     </site-section>
 
+    <section-heading>
+        <slot slot="title">Check out our lates articles</slot>
+    </section-heading>
 
+    <site-grid>
+
+        <card-article slot="first">
+            <img slot="picture" style="max-width:100%; border-radius: var(--spacer-big) var(--spacer-big) 0 0;"src="assets/articles/image 2 (1).png">
+            <h3 slot="heading">Disease detection, check up in the laboratory</h3>
+            <p slot="paragraph">In this case, the role of the health laboratory is very important to do
+                a disease detection...</p>
+            <p slot="card-text">Learn more →</p>
+        </card-article>
+  
+        <card-article slot="second">
+            <img slot="picture" style="max-width:100%; border-radius: var(--spacer-big) var(--spacer-big) 0 0;" src="assets/articles/image 2.png">
+            <h3 slot="heading">Herbal medicines that are safe for consumption</h3>
+            <p slot="paragraph">Herbal medicine is very widely used at this time because of its very good for your health...</p>
+            <p slot="card-text">Learn more →</p>
+        </card-article>
+
+    
+        <card-article class="article" slot="third">
+            <img slot="picture" style="max-width: 100%; border-radius: var(--spacer-big) var(--spacer-big) 0 0;" src="assets/articles/image 3.png">
+            <h3 slot="heading">Natural care for healthy facial skin</h3>
+            <p slot="paragraph">A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+            <p slot="card-text">Learn more →</p>
+        </card-article>
+
+    </site-grid>
+
+
+    <div style="display:flex; text-align:center; justify-content:center;margin:auto">
+        <custom-button class="button secondary">
+            <span slot="button-text">View all</span>
+        </custom-button>
+    </div>
 
 
 <site-footer>
@@ -181,6 +217,7 @@
 <script src="web-components/section-heading/section-heading.js"></script>
 <script src="web-components/grid/grid.js"></script>
 <script src="web-components/card/card.js"></script>
+<script src="web-components/card-article/card-article.js"></script>
 <script src="web-components/button/button.js"></script>
 
 </body>
