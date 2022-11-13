@@ -23,6 +23,10 @@ ul {
   list-style: none;
   padding: 0;
 }
+ul li :hover {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+}
 
 li {
   line-height: var(--spacer-bigger-footer);
