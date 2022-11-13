@@ -18,8 +18,9 @@
           
             :hover{
                 cursor:pointer;
+                font-weight: var( --font-weight-bold);
             }
-            }
+        }
 
         .paragraph {
             color: var(--text-color-primary);

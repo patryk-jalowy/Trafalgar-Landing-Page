@@ -21,6 +21,7 @@
 }
 .article .text .card-text :hover {
   cursor: pointer;
+  font-weight: var(--font-weight-bold);
 }
 .article .text .paragraph {
   color: var(--text-color-primary);
