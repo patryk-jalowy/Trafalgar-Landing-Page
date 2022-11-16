@@ -6,9 +6,14 @@ styles/styles.css.map
 web-components/grid/grid.css
 web-components/grid/grid.css.map
 web-components/card/card.css
-web-components/card-article/cart-article.css
-web-components/card-article/cart-article.css.map
+web-components/card-article/card-article.css
+web-components/card-article/card-article.css.map
 web-components/card/card.css.map
+web-components/section/site-section.css
+web-components/section/site-section.css
+web-components/section/site-section.css.map
+web-components/navbar/navbar.css
+web-components/navbar/navbar.css.map
 web-components/section-heading/section-heading.css
 web-components/section-heading/section-heading.css.map
 web-components/footer/footer.css
