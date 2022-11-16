@@ -7,8 +7,8 @@ cardart.innerHTML =
 </style>
 
 <div class="article">
-    <div class="picture">
-        <slot name="picture">
+    <div class="image">
+        <slot name="image">
     </div>
     <div class="title">
         <div>
