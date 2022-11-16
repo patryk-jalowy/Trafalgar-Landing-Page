@@ -10,15 +10,15 @@ cardart.innerHTML =
     <div class="picture">
         <slot name="picture">
     </div>
-    <div class="text">
-        <div class="heading">
-            <slot name="heading">
+    <div class="title">
+        <div>
+            <slot name="title">
         </div>
-        <div class="paragraph">
-            <slot name="paragraph">
+        <div class="description">
+            <slot name="description">
         </div>
-        <div class="card-text">
-            <slot name="card-text">
+        <div class="button">
+            <slot name="button">
         </div>
     </div>
 </div>
