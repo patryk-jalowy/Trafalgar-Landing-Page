@@ -3,6 +3,8 @@
 
 styles/styles.css
 styles/styles.css.map
+styles/button.css
+styles/button.css.map
 web-components/grid/grid.css
 web-components/grid/grid.css.map
 web-components/card/card.css
