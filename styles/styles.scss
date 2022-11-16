@@ -46,7 +46,7 @@ button {
   color: var(--primary-color);
   padding: var(--spacer-big) 0;
     
-    :hover {
+    &:hover {
       cursor:pointer;
       font-weight: var( --font-weight-bold);
     }
@@ -88,4 +88,13 @@ button {
   margin:auto
 }
 
+.footer-logo {
+
+  display: flex;
+  align-items: center;
+
+    h4{
+      padding: 0 var(--spacer-small);
+    } 
+  }
 /*# sourceMappingURL=styles.css.map */
