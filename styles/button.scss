@@ -4,16 +4,17 @@
   margin: var(--spacer-big) 0;
   font-weight: var(--font-weight-bold);
   padding: var(--spacer-small) var(--spacer-biggest);
-}
-.button.primary {
-  border: none;
-  background-color: var(--primary-color);
-  color: var(--navbar-bg-color);
-}
-.button.secondary {
-  background-color: var(--navbar-bg-color);
-  color: var(--primary-color);
-  border: solid 1px var(--primary-color);
-}
+  
+  &.primary {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--navbar-bg-color);
+  }
 
+  &.secondary {
+    background-color: var(--navbar-bg-color);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+  }
+}
 /*# sourceMappingURL=button.css.map */
