@@ -1,21 +1,21 @@
-
-.card {
+.article {
     position: relative;
-    height: 280px;
-    padding: 2.5rem;
+    height: fit-content;
+    width: auto;
     border-radius: var(--spacer-big);
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     background: var(--navbar-bg-color);
     display: flex;
     flex-direction: column;
-    
-    .picture {
-        display: flex;
-        align-items: center;
-        height: 35%;
-    }
-    .card-text{
+    p{
         color: var(--text-color-primary);
+    }
+    .title{
+        padding: 0 var(--spacer-big);
+
+        .description {
+            color: var(--text-color-primary);
+        }
     }
 }
 

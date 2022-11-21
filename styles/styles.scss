@@ -39,6 +39,19 @@ ul, ol {
   }
 }
 
+button {
+  
+  border: none;
+  background-color: #ffffff;
+  color: var(--primary-color);
+  padding: var(--spacer-big) 0;
+    
+    &:hover {
+      cursor:pointer;
+      font-weight: var( --font-weight-bold);
+    }
+}
+
 .img-content {
   text-align: center;
 }
@@ -63,4 +76,25 @@ ul, ol {
   color: var(--text-color-primary);
 }
 
+.article-img{ 
+  max-width: 100%;
+  border-radius: var(--spacer-big) var(--spacer-big) 0 0;
+}
+
+.button-container{
+  display:flex; 
+  text-align:center; 
+  justify-content:center;
+  margin:auto
+}
+
+.footer-logo {
+
+  display: flex;
+  align-items: center;
+
+    h4{
+      padding: 0 var(--spacer-small);
+    } 
+  }
 /*# sourceMappingURL=styles.css.map */
